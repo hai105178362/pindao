@@ -13,7 +13,20 @@
 
       gtag('config', 'UA-196519869-1');
     </script>
-
+    <script>
+        function initBuyButtonClickEvent() {
+                const buttons = document.querySelectorAll("#select .button")
+                for (const button of buttons) {
+                  button.addEventListener('click', function(event) {
+                       gtag('event', 'action_click_buy_now', {
+                          'event_category': 'category_click_buy_now',
+                          'event_label': 'label_click_buy_now',
+                          'value': 1
+                        });
+                  })
+                }
+        }
+    </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>包邮优惠|特价－拼多多优惠商城</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -47,7 +60,7 @@
     <meta name="360-site-verification" content="69745aea5bcc669978016bb0f049b47f" class="next-head">
 </head>
 
-<body>
+<body onload="initBuyButtonClickEvent()">
     <div id="__next">
         <div class="site-wrapper">
             <div class="search-bar">
