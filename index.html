@@ -7,6 +7,20 @@
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TNFZHP9"></script>
     
     
+    <script>
+        function initBuyButtonClickEvent() {
+                const buttons = document.querySelectorAll(".purchase-btn")
+                for (const button of buttons) {
+                  button.addEventListener('click', function(event) {
+                       gtag('event', 'event_click_buy_now', {
+                          'event_category': 'category_click_buy_now',
+                          'event_label': 'label_click_buy_now',
+                          'value': 1
+                        });
+                  })
+                }
+        }
+    </script>
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>包邮优惠|特价－拼多多优惠商城</title>
