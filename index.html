@@ -22,6 +22,7 @@
                 const buttons = document.querySelectorAll(".login-btn")
                 for (const button of buttons) {
                   button.addEventListener('click', function(event) {
+                       console.log('click login button');
                        gtag('event', 'event_login_duoduo', {
                           'event_category': 'category_login_duoduo',
                           'event_label': 'label_login_duoduo',
@@ -75,7 +76,7 @@
                 <div class="content"><img src="./list_files/804f5f88-82d4-4b3f-9cfe-06d4d172fec3.png.slim.png" alt="" class="logo-img">
                     <div class="search-bar-input"><input type="text" placeholder="请输入商品名称" value=""><span>搜索</span></div>
                     <div class="login-wrapper">
-                        <div class="login-btn" id="login-btn-id" href="#login_pindaodao">登录多多</div>
+                        <div class="login-btn" id="login-btn-id">登录多多</div>
                     </div>
                 </div>
             </div>
