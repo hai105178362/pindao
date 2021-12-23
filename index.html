@@ -4,17 +4,27 @@
 
 <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215774849-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-215774849-1');
+    </script>
+    
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TNFZHP9"></script>
     
     
     <script>
         function initBuyButtonClickEvent() {
-                const buttons = document.querySelectorAll(".purchase-btn")
+                const buttons = document.querySelectorAll(".login-btn")
                 for (const button of buttons) {
                   button.addEventListener('click', function(event) {
-                       gtag('event', 'event_click_buy_now', {
-                          'event_category': 'category_click_buy_now',
-                          'event_label': 'label_click_buy_now',
+                       gtag('event', 'event_login_duoduo', {
+                          'event_category': 'category_login_duoduo',
+                          'event_label': 'label_login_duoduo',
                           'value': 1
                         });
                   })
@@ -22,22 +32,7 @@
         }
     </script>
     
-    <style>
-    .bayesian_button {
-      border: none;
-      color: white;
-      padding: 15px 62px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
 
-    .bayesian_button1 {background-color: #4CAF50;} /* Green */
-    .bayesian_button2 {background-color: #008CBA;} /* Blue */
-    </style>
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>包邮优惠|特价－拼多多优惠商城</title>
@@ -73,8 +68,6 @@
 </head>
 
 <body onload="initBuyButtonClickEvent()">
-    <button class="bayesian_button bayesian_button1">触发Google Analytics事件</button>
-    <button class="bayesian_button bayesian_button2">Blue</button>
     <div id="__next">
         <div class="site-wrapper">
             <div class="search-bar">
@@ -82,7 +75,7 @@
                 <div class="content"><img src="./list_files/804f5f88-82d4-4b3f-9cfe-06d4d172fec3.png.slim.png" alt="" class="logo-img">
                     <div class="search-bar-input"><input type="text" placeholder="请输入商品名称" value=""><span>搜索</span></div>
                     <div class="login-wrapper">
-                        <div class="login-btn">登录</div>
+                        <div class="login-btn">登录多多</div>
                     </div>
                 </div>
             </div>
