@@ -19,17 +19,27 @@
     
     <script>
         function initBuyButtonClickEvent() {
-                const buttons = document.querySelectorAll(".login-btn")
-                for (const button of buttons) {
-                  button.addEventListener('click', function(event) {
-                       console.log('click login button');
-                       gtag('event', 'event_login_duoduo', {
+                const btn = document.getElementById("login-btn-id")
+                btn.addEventListener("click", ()=>{
+                    btn.value = "点击后:" +btn.value ;
+                    console.log('click login button');
+                    gtag('event', 'event_login_duoduo', {
                           'event_category': 'category_login_duoduo',
                           'event_label': 'label_login_duoduo',
                           'value': 1
                         });
-                  })
-                }
+                })
+            
+//                 for (const button of buttons) {
+//                   button.addEventListener('click', function(event) {
+//                        console.log('click login button');
+//                        gtag('event', 'event_login_duoduo', {
+//                           'event_category': 'category_login_duoduo',
+//                           'event_label': 'label_login_duoduo',
+//                           'value': 1
+//                         });
+//                   })
+//                 }
         }
     </script>
     
